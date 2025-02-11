@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-nav: #e0f1fe;
+    --color-bg-primary: #eff7ff;
+    --color-bg-secondary: #e3fdef;
+    --color-text: #707980;
+    --color-link: #707980;
+    --color-link-hover: ;
+    --color-selected-text: ;
+    --color-footer: ;
+    --font-family: 'Noto Sans', sans-serif;
+    --font-size-title: ;
+    --font-size-text: ;
+    --font-size-subtitle: ;
+    --color-btn-primary: #9ad9ef;
+    --color-btn-secondary: #a9e5d4;
+    --color-emphasis: #96c8f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 100rem;
+}
+
+::selection {
+    background-color: var(--color-emphasis);
+    color: var(--color-text);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-nav);
+}
+
+.nav__logo-text {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 15rem;
+    font-weight: 500;
+}
+
+.nav__list {
+    display: flex;
+    gap: 1rem;
+    margin-right: 15rem;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    background-color: var(--color-bg-primary);
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 16.4rem;
+    width: 30rem;
+}
+
+.hero__span {
+    color: var(--color-emphasis);
+}
+
+.hero__btn {
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--color-btn-primary);
+    text-decoration: none;
+    color: var(--color-text);
+    display: inline-block;
+    width: 14rem;
+    padding: 1rem;
+}
+
+.hero__image-dog {
+    width: 15rem;
+    margin-left: 20rem;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0rem 4rem 0rem;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+}
+
+.container__services-card--large {
+    border-radius: 10px;
+    border: 1px solid var(--color-link);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 28rem;
+    height: 25rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.container__services-card {
+    display: flex;
+    gap: 1rem;
+}
+
+.services__btn {
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: var(--color-btn-secondary);
+    text-decoration: none;
+    color: var(--color-text);
+    width: 5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.services__image {
+    width: 13rem;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0rem 4rem 0rem;
+    background-color: white;
+    color: var(--color-text);
+}
+
+.container__products-card--large {
+    border-radius: 10px;
+    border: 1px solid var(--color-link);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 20rem;
+    height: 25rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.container__products-card {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.products__btn {
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: var(--color-btn-primary);
+    text-decoration: none;
+    color: var(--color-text);
+    width: 5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.products__image {
+    width: 13rem;
+}
