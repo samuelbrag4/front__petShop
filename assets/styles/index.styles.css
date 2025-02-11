@@ -37,6 +37,14 @@ body {
     color: var(--color-text);
 }
 
+.header {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -71,7 +79,8 @@ body {
 .hero {
     display: flex;
     background-color: var(--color-bg-primary);
-    padding: 4rem 0rem 4rem 0rem;
+    padding: 5rem 0rem 4rem 0rem;
+    margin-top: 4rem;
 }
 
 .hero__content {
@@ -189,6 +198,7 @@ body {
     width: 5rem;
     text-align: center;
     padding: 0.5rem;
+    margin-top: auto;
 }
 
 .products__image {
