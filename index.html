@@ -165,14 +165,14 @@
 
   <section class="contact" id="contact">
     <h2>Entre em Contato</h2>
-    <form action="" class="contact__form">
-      <h6>Nome</h6>
-      <input type="text" placeholder="Nome" class="contact__input">
-      <h6>Email</h6>
-      <input type="email" placeholder="E-mail" class="contact__input">
-      <h6>Mensagem</h6>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem" class="contact__textarea"></textarea>
-      <button class="contact__btn">Enviar Mensagem</button>
+    <form class="contact__form" id="contatoForm">
+      <label for="nome">Nome</label>
+      <input type="text" placeholder="Nome" class="contact__input" id="nome">
+      <label for="email">Email</label>
+      <input type="email" placeholder="E-mail" class="contact__input" id="email">
+      <label for="mensagem">Mensagem</label>
+      <textarea cols="30" rows="10" placeholder="Mensagem" class="contact__textarea" id="mensagem"></textarea>
+      <button class="contact__btn" type="submit">Enviar Mensagem</button>
     </form>
   </section>
 
@@ -180,14 +180,17 @@
     <p class="footer__copyright">&copy; 2023 Au Au Miau. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Link Script -->
-  <script src="./assets/scripts/index.scripts.js"></script>
 
   <!-- Link Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
   <!-- Link Email -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Link Script -->
+  <script src="./assets/scripts/index.scripts.js"></script>
 </body>
 
 </html>
